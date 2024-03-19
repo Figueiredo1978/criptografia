@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Criptografia </title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./assets/Frame 6 (1).png" alt="logo alura">
+    </header>
+    <main>
+        <section class="containerprincipal">
+            <div class="containerprincipal__caixadetexto">
+                <textarea id="textoInput" placeholder="Digite seu texto" class="containerprincipal__caixadetexto__texto"></textarea>
+                <span class="observacao">
+                    <icon><img src="./assets/bi_exclamation-circle-fill.png" alt="ponto de exclamacao alerta"></icon>
+                    Apenas letras minúsculas e sem acento.
+                </span>
+            </div>
+            <div class="containerprincipal__botoes">
+                <button id="criptografar" class="btn__criptografar" onclick="criptografar()" disabled>Criptografar</button>
+                <button id="descriptografar" class="btn__descriptografar" onclick="descriptografar()" disabled>Descriptografar</button>
+            </div>
+        </section>
+        <section class="containersecundario">
+            <div class="containersecundario__inicial">
+                <div class="containersecundario__meninadalupa">
+                    <img src="./assets/High quality products 1 1.png" alt="meninadalupa">
+                </div>
+                <div class="containersecundario__paragrafo">
+                    <h3 class=" containersecundario__paragrafo__h3">Nenhuma mensagem <br> encontrada</h3>
+                    <p classe="containersecundario__paragrafo__p">Digite um texto que você deseja <br> criptografar ou
+                        descriptografar.</p>
+                </div>
+            </div>
+            <div class="containersecundario__resultado">
+                <div class="containersecundario__botao__resultado">
+                    <p class="containersecundario__texto__resultado"></p>
+                </div>
+                <div class="containersecundario__botao__copiar">
+                    <input type="button" class=" btn__copiar" value="Copiar">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+    <footer class="rodape">
+        <p class="rodape__texto">Desenvolvido por Marcos P. Figueiredo.</p>
+    </footer>
+</body>
+
+</html>
